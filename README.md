@@ -918,17 +918,15 @@ El más joven es María con 19 años
 
 Completa el código que usa list comprehension para filtrar y transformar datos:
 
-```python
 temperaturas_f = [32, 50, 68, 86, 104, 212]
 
 # Convertir todas a Celsius: C = (F - 32) * 5/9
-temperaturas_c = [??? for f in temperaturas_f]
+temperaturas_c = [(f-32)*5/9 for f in temperaturas_f]
 print("En Celsius:", temperaturas_c)
 
 # Filtrar solo las temperaturas menores a 50°C
-frias = [c for c in temperaturas_c if ???]
+frias = [c for c in temperaturas_c if c<50]
 print("Menores a 50°C:", frias)
-```
 
 **Salida esperada:**
 ```
