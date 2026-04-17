@@ -178,7 +178,7 @@ print(m, n, p)          # 0 0 0
 - c) `int x = 5`
 - d) `PI = 3.14159`
 
-**Respuesta:** ______
+**Respuesta:** __b__
 
 ### Ejercicio 1.5 — Opción múltiple
 
@@ -195,7 +195,7 @@ print(type(x))
 - c) Error: no se puede cambiar el tipo de una variable
 - d) `<class 'float'>`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 > **Nota:** En C, una vez que declaras `int x`, esa variable siempre será `int`. En Python las
 > variables pueden cambiar de tipo al reasignarles un valor. Esto se llama **tipado dinámico**.
@@ -209,7 +209,7 @@ print(type(x))
 - c) Error: `ValueError`
 - d) `"3"`
 
-**Respuesta:** ______
+**Respuesta:** ___c___
 
 > **Pista:** `int()` solo convierte cadenas que representan enteros. Para convertir `"3.14"` a
 > entero, primero se debe hacer `int(float("3.14"))`.
@@ -230,7 +230,7 @@ print(type(c))
 - c) `<class 'str'>`
 - d) Error: no se pueden sumar un `int` y un `float`
 
-**Respuesta:** ______
+**Respuesta:** __b___
 
 ### Ejercicio 1.8 — Opción múltiple
 
@@ -241,7 +241,7 @@ print(type(c))
 - c) `lambda`
 - d) `include`
 
-**Respuesta:** ______
+**Respuesta:** __c___
 
 ### Ejercicio 1.9 — Opción múltiple
 
@@ -258,7 +258,7 @@ print(a, b)
 - c) `10 10`
 - d) Error
 
-**Respuesta:** ______
+**Respuesta:** ___a___
 
 ---
 
