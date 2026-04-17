@@ -643,7 +643,7 @@ print(7 / 2, 7 // 2, 7 % 2)
 - c) `3.5 3.0 1`
 - d) `3.5 3 1.0`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 3.5 — Opción múltiple
 
@@ -658,7 +658,7 @@ print(2 ** 10)
 - c) `100`
 - d) Error: el operador `**` no existe
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 3.6 — Opción múltiple
 
@@ -676,7 +676,7 @@ print(x)
 - c) `35`
 - d) `20`
 
-**Respuesta:** ______
+**Respuesta:** __b____
 
 ### Ejercicio 3.7 — Opción múltiple
 
@@ -687,7 +687,7 @@ print(x)
 - c) `++`
 - d) `%`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 3.8 — Opción múltiple
 
@@ -703,7 +703,7 @@ print(10 is 10.0)
 - c) `False` y `False`
 - d) `False` y `True`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 > **Nota:** `==` compara valores; `is` compara si son el mismo objeto en memoria.
 > `10` (int) y `10.0` (float) tienen el mismo valor pero son objetos distintos.
@@ -722,7 +722,7 @@ print(5 < 10 > 3)
 - c) `True` y Error
 - d) Error y Error
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ---
 
@@ -862,20 +862,20 @@ Dada la siguiente lista, completa el código para obtener la salida indicada:
 calificaciones = [8.5, 9.0, 7.5, 10.0, 6.0, 8.0]
 
 # 1. Imprime la cantidad de calificaciones
-print("Total:", ???)
+print("Total:", lend(calificaciones))
 
 # 2. Imprime la calificación más alta
-print("Máxima:", ???)
+print("Máxima:", max(calificaciones))
 
 # 3. Imprime la calificación más baja
-print("Mínima:", ???)
+print("Mínima:", min(calificaciones))
 
 # 4. Imprime el promedio
-print("Promedio:", ???)
+print("Promedio:", sum(calificaciones/len(calificaciones)))
 
 # 5. Imprime las calificaciones ordenadas de menor a mayor
 #    Pista: usa sorted()
-print("Ordenadas:", ???)
+print("Ordenadas:", sorted (calificaciones))
 ```
 
 **Salida esperada:**
