@@ -1233,8 +1233,8 @@ Completa el código que invierte un diccionario (las llaves se vuelven valores y
 original = {"rojo": 1, "verde": 2, "azul": 3}
 
 invertido = {}
-for llave, valor in original.???():
-    invertido[???] = ???
+for llave, valor in original.items():
+    invertido[valor] = llave
 
 print(invertido)
 
@@ -1261,8 +1261,8 @@ inscripciones = [
 por_materia = {}
 for nombre, materia in inscripciones:
     if materia not in por_materia:
-        por_materia[???] = []
-    por_materia[???].???(nombre)
+        por_materia[materia] = []
+    por_materia[materia].append(nombre)
 
 for materia, alumnos in por_materia.items():
     print(f"  {materia}: {alumnos}")
@@ -1284,7 +1284,7 @@ for materia, alumnos in por_materia.items():
 - c) Las tuplas pueden contener más tipos de datos que las listas
 - d) Las listas son más rápidas que las tuplas
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 5.8 — Opción múltiple
 
@@ -1301,7 +1301,7 @@ print(d)
 - c) Error: no se pueden modificar los valores de un diccionario
 - d) `{"a": 1, "c": 3, "b": 20}`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 5.9 — Opción múltiple
 
@@ -1317,7 +1317,7 @@ print(d.get("z", 0))
 - c) Error: `KeyError`
 - d) `"z"`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 5.10 — Opción múltiple
 
@@ -1335,7 +1335,7 @@ print(tupla, lista)
 - c) Error: no se puede convertir una tupla a lista
 - d) `(1, 2, 3) [1, 2, 3]`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 5.11 — Opción múltiple
 
@@ -1346,7 +1346,7 @@ print(tupla, lista)
 - c) `8`
 - d) Error
 
-**Respuesta:** ______
+**Respuesta:** ___a___
 
 ### Ejercicio 5.12 — Opción múltiple
 
@@ -1357,7 +1357,7 @@ print(tupla, lista)
 - c) `(1, 2)`
 - d) `[1, 2]`
 
-**Respuesta:** ______
+**Respuesta:** ___d___
 
 > **Nota:** Las llaves de un diccionario deben ser **inmutables**. Las listas son mutables,
 > por lo que no pueden usarse como llaves. Enteros, cadenas y tuplas sí pueden.
