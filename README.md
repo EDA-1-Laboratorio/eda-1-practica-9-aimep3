@@ -428,11 +428,11 @@ Completa el código para generar un acrónimo a partir de una frase:
 ```python
 frase = "Estructura de Datos y Algoritmos"
 
-palabras = frase.???(???)   # Dividir la frase en palabras
+palabras = frase.split()   # Dividir la frase en palabras
 acronimo = ""
 
 for palabra in palabras:
-    acronimo = acronimo + palabra[???].???()   # Primera letra en mayúscula
+    acronimo = acronimo + palabra[0].upper()   # Primera letra en mayúscula
 
 print(acronimo)
 ```
@@ -452,9 +452,9 @@ y al revés):
 
 ```python
 def es_palindromo(texto):
-    texto = texto.???()        # Convertir a minúsculas
+    texto = texto.lower()        # Convertir a minúsculas
     texto = texto.replace(" ", "")  # Quitar espacios
-    return texto == texto[???]      # Comparar con la cadena invertida
+    return texto == texto[::-1]      # Comparar con la cadena invertida
 
 # Pruebas
 print(es_palindromo("anilina"))      # True
@@ -477,7 +477,7 @@ texto[0] = "h"
 - c) Se crea una nueva cadena `"hola"` automáticamente
 - d) No pasa nada, el cambio se ignora silenciosamente
 
-**Respuesta:** ______
+**Respuesta:** __b___
 
 ### Ejercicio 2.8 — Opción múltiple
 
@@ -493,7 +493,7 @@ print(texto.split())
 - c) `['Hola', 'Mundo']`
 - d) `('Hola', 'Mundo')`
 
-**Respuesta:** ______
+**Respuesta:** ___c___
 
 ### Ejercicio 2.9 — Opción múltiple
 
@@ -509,7 +509,7 @@ print(s[-1], s[-2])
 - c) Error: los índices negativos no existen
 - d) `n h`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ---
 
@@ -1210,18 +1210,16 @@ print(f"Coordenada x: {p[0]}")
 Completa el siguiente programa que usa un diccionario para contar la frecuencia de cada
 letra en una cadena:
 
-```python
 texto = "abracadabra"
 frecuencia = {}
 
 for letra in texto:
     if letra in frecuencia:
-        frecuencia[???] = frecuencia[???] + 1
+        frecuencia[letra] = frecuencia[letra] + 1
     else:
-        frecuencia[???] = 1
+        frecuencia[letra] = 1
 
 print(frecuencia)
-```
 
 **Salida esperada:**
 ```
@@ -1232,7 +1230,6 @@ print(frecuencia)
 
 Completa el código que invierte un diccionario (las llaves se vuelven valores y viceversa):
 
-```python
 original = {"rojo": 1, "verde": 2, "azul": 3}
 
 invertido = {}
@@ -1240,7 +1237,6 @@ for llave, valor in original.???():
     invertido[???] = ???
 
 print(invertido)
-```
 
 **Salida esperada:**
 ```
