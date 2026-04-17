@@ -948,7 +948,7 @@ print(lista[1:3])
 - c) `[2, 3, 4]`
 - d) `[1, 2]`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 4.8 — Opción múltiple
 
@@ -965,7 +965,7 @@ print(len(lista))
 - c) `5`
 - d) Error
 
-**Respuesta:** ______
+**Respuesta:** ___4___
 
 > **Nota:** `append` agrega el argumento como **un solo elemento**. Si quieres agregar los
 > elementos individuales, usa `extend`: `lista.extend([40, 50])` → longitud sería 5.
@@ -986,7 +986,7 @@ print(a)
 - c) Error: `b` es una copia, no se puede modificar `a`
 - d) `[4, 1, 2, 3]`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 4.10 — Opción múltiple
 
@@ -1002,7 +1002,7 @@ print(result)
 - c) `[0, 2, 4, 6, 8]`
 - d) `[1, 2, 3, 4, 5]`
 
-**Respuesta:** ______
+**Respuesta:** ___c___
 
 ### Ejercicio 4.11 — Opción múltiple
 
@@ -1018,7 +1018,7 @@ print(lista[-2])
 - c) `5`
 - d) Error: índice negativo no válido
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 4.12 — Opción múltiple
 
@@ -1037,7 +1037,7 @@ print(nums)
 - c) `[1, 1, 3, 4, 5]` y `[1, 1, 3, 4, 5]`
 - d) Error: no se puede ordenar una lista con duplicados
 
-**Respuesta:** ______
+**Respuesta:** ___a___
 
 ---
 
