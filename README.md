@@ -405,13 +405,13 @@ Completa las líneas marcadas con `???` para que el programa funcione correctame
 fruta = "manzana"
 
 # Imprimir la longitud de la cadena
-print("La fruta tiene", ???(fruta), "letras")
+print("La fruta tiene", len(fruta), "letras")
 
 # Imprimir en mayúsculas
-print(fruta.???())
+print(fruta.upper())
 
 # Imprimir los primeros 3 caracteres
-print(fruta[???])
+print(fruta[0:3])
 ```
 
 **Salida esperada:**
