@@ -1500,12 +1500,12 @@ print("Pares:", pares)           # [2, 4]
 
 Completa la función que convierte grados Celsius a Fahrenheit y viceversa:
 
-```python
 def celsius_a_fahrenheit(celsius):
-    return ???
+    return (celsius*9/5)+32
 
 def fahrenheit_a_celsius(fahrenheit):
-    return ???
+    return (fahrenheit-32)*5/9
+print(celsius_a_fahrenheit(10)) 
 
 # Pruebas
 print(celsius_a_fahrenheit(0))     # 32.0
@@ -1526,10 +1526,10 @@ def separar_pares_impares(numeros):
     pares = []
     impares = []
     for n in numeros:
-        if ???:
-            pares.???(n)
+        if n % 2 == 0:
+            pares.append(n)
         else:
-            impares.???(n)
+            impares.append(n)
     return pares, impares
 
 # Prueba
