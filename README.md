@@ -898,13 +898,13 @@ nombres = ["Ana", "Luis", "María", "Pedro"]
 edades = [20, 22, 19, 21]
 
 # Combinar usando zip()
-combinada = list(???(nombres, edades))
+combinada = list(zip(nombres, edades))
 print(combinada)
 # [('Ana', 20), ('Luis', 22), ('María', 19), ('Pedro', 21)]
 
 # Encontrar el nombre de la persona más joven
-edad_minima = ???(edades)
-indice_joven = edades.???(edad_minima)
+edad_minima = min(edades)
+indice_joven = edades.index(edad_minima)
 print(f"El más joven es {nombres[indice_joven]} con {edad_minima} años")
 ```
 
