@@ -1946,7 +1946,7 @@ switch(opcion) {
 
 - d) Tanto b) como c) son válidas (c a partir de Python 3.10)
 
-**Respuesta:** ______
+**Respuesta:** ___d___
 
 ### Ejercicio 7.8 — Opción múltiple
 
@@ -1965,7 +1965,7 @@ else:
 - c) Error: `x` no es un booleano
 - d) No imprime nada
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 > Recuerda: `0`, `""`, `[]`, `None` y `False` son "falsy" (se evalúan como `False`).
 
@@ -1984,7 +1984,7 @@ print(resultado)
 - c) Error: la sintaxis es inválida
 - d) `15`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ---
 
@@ -2319,7 +2319,7 @@ for i in range(2, 10, 3):
 - c) `2 4 6 8`
 - d) `3 6 9`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 > **Nota:** `range(inicio, fin, paso)` — similar a `for(int i = inicio; i < fin; i += paso)` en C.
 
@@ -2339,7 +2339,7 @@ for i in range(5):
 - c) `0 1 2 4`
 - d) `3`
 
-**Respuesta:** ______
+**Respuesta:** ___b___
 
 ### Ejercicio 8.12 — Opción múltiple
 
@@ -2357,7 +2357,7 @@ for i in range(5):
 - c) `0 1 2 4`
 - d) `3`
 
-**Respuesta:** ______
+**Respuesta:** ___c___
 
 ---
 
