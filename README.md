@@ -258,7 +258,7 @@ print(a, b)
 - c) `10 10`
 - d) Error
 
-**Respuesta:** ___a___
+**Respuesta:** ___b___
 
 ---
 
