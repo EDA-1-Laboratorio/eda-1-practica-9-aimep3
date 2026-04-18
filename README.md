@@ -1546,13 +1546,13 @@ Completa la función que cuenta cuántas vocales y consonantes tiene una cadena:
 ```python
 def contar_vocales_consonantes(texto):
     vocales = "aeiouáéíóú"
-    texto = texto.???()  # Convertir a minúsculas
+    texto = texto.lower()  # Convertir a minúsculas
     num_vocales = 0
     num_consonantes = 0
     for c in texto:
         if c.isalpha():    # Solo letras (ignora espacios, números, etc.)
-            if c ??? vocales:
-                num_vocales ???= 1
+            if c in vocales:
+                num_vocales += 1
             else:
                 num_consonantes += 1
     return num_vocales, num_consonantes
@@ -1574,9 +1574,9 @@ el mayor valor en una llave dada:
 def encontrar_maximo(lista, llave):
     if not lista:
         return None
-    maximo = lista[???]
+    maximo = lista[0]
     for elemento in lista:
-        if elemento[???] > maximo[???]:
+        if elemento[llave] > maximo[llave]:
             maximo = elemento
     return maximo
 
@@ -1616,12 +1616,12 @@ original:
 
 ```python
 def eliminar_duplicados(lista):
-    vistos = ???      # Pista: usa un conjunto (set)
+    vistos = set()      # Pista: usa un conjunto (set)
     resultado = []
     for elemento in lista:
-        if elemento ??? vistos:
+        if elemento not in vistos:
             resultado.append(elemento)
-            vistos.???(elemento)
+            vistos.add(elemento)
     return resultado
 
 # Pruebas
@@ -1675,7 +1675,7 @@ incrementar()
 print("Contador:", contador)
 ```
 
-**Tu predicción:** Contador = ______
+**Tu predicción:** Contador = ___3___
 
 > Aquí se usa `global` para modificar la variable del ámbito exterior. Recuerda que
 > esto es **mala práctica**. Sería mejor: `contador = incrementar(contador)`.
@@ -1699,9 +1699,9 @@ exterior()
 ```
 
 **Tu predicción:**
-- Interior: ______
-- Exterior: ______
-- Si descomentas `print(mensaje)`: ______
+- Interior: ___hola___
+- Exterior: ___hola___
+- Si descomentas `print(mensaje)`: ___nada___
 
 ---
 
@@ -1832,13 +1832,13 @@ Completa la función que clasifica una calificación numérica en letras.
 
 ```python
 def calificacion_letra(nota):
-    if ???:
+    if nota>=90:
         return "A"    # 90-100
-    elif ???:
+    elif nota>=80:
         return "B"    # 80-89
-    elif ???:
+    elif nota>=70:
         return "C"    # 70-79
-    elif ???:
+    elif nota>=60:
         return "D"    # 60-69
     else:
         return "F"    # menos de 60
@@ -1857,9 +1857,9 @@ Completa la función que determina si un año es bisiesto:
 
 ```python
 def es_bisiesto(anio):
-    if anio % ??? == 0:
-        if anio % ??? == 0:
-            if anio % ??? == 0:
+    if anio % 4 == 0:
+        if anio % 100 == 0:
+            if anio % 400 == 0:
                 return True
             else:
                 return False
@@ -1884,12 +1884,12 @@ Completa la función que clasifica un carácter según su tipo:
 
 ```python
 def clasificar_caracter(c):
-    if c.???():        # ¿Es una letra?
-        if c.???():    # ¿Es mayúscula?
+    if c.ishalpha():        # ¿Es una letra?
+        if c.issupper():    # ¿Es mayúscula?
             return "Letra mayúscula"
         else:
             return "Letra minúscula"
-    elif c.???():      # ¿Es un dígito?
+    elif c.isdigit():      # ¿Es un dígito?
         return "Dígito"
     elif c == " ":
         return "Espacio"
