@@ -1599,9 +1599,9 @@ Completa la función recursiva que calcula la potencia de un número:
 
 ```python
 def potencia_recursiva(base, exponente):
-    if exponente == ???:
-        return ???
-    return base * potencia_recursiva(???, ???)
+    if exponente == 0:
+        return 1
+    return base * potencia_recursiva(base, exponente - 1)
 
 # Pruebas
 print(potencia_recursiva(2, 10))   # 1024
