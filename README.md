@@ -722,7 +722,7 @@ print(5 < 10 > 3)
 - c) `True` y Error
 - d) Error y Error
 
-**Respuesta:** ___b___
+**Respuesta:** ___a___
 
 ---
 
