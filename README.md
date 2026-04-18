@@ -2156,9 +2156,9 @@ Completa el programa que calcula el factorial de un número usando un ciclo `whi
 ```python
 def factorial(n):
     resultado = 1
-    while ???:
+    while n>0:
         resultado = resultado * n
-        ???
+        n = n -1
     return resultado
 
 # Pruebas
@@ -2175,15 +2175,15 @@ Completa el programa que encuentra los números primos entre 2 y un límite dado
 def es_primo(n):
     if n < 2:
         return False
-    for i in range(2, ???):
-        if ???:
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
             return False
     return True
 
 def listar_primos(limite):
     primos = []
     for num in range(2, limite + 1):
-        if ???:
+        if es_primo(num):
             primos.append(num)
     return primos
 
@@ -2201,10 +2201,10 @@ Completa el programa que genera la secuencia de Fibonacci hasta un límite:
 ```python
 def fibonacci(limite):
     secuencia = []
-    a, b = ???, ???
-    while a ???:
+    a, b = 0, 1
+    while a <= limite:
         secuencia.append(a)
-        a, b = ???, ???
+        a, b = b, a+b
     return secuencia
 
 # Pruebas
@@ -2233,12 +2233,12 @@ def juego_adivinanza():
 
     while True:
         intento = int(input("Tu intento: "))
-        intentos ???= 1
+        intentos += 1
 
-        if intento ???:
+        if intento ==secreto:
             print("¡Correcto! Lo lograste en", intentos, "intentos")
-            ???     # terminar el ciclo
-        elif intento ??? secreto:
+            break     # terminar el ciclo
+        elif intento < secreto:
             print("Demasiado bajo")
         else:
             print("Demasiado alto")
@@ -2255,9 +2255,9 @@ suman un valor dado:
 def contar_sumas(objetivo):
     conteo = 0
     combinaciones = []
-    for dado1 in range(???, ???):
-        for dado2 in range(???, ???):
-            if dado1 + dado2 ???:
+    for dado1 in range(1, 7):
+        for dado2 in range(1, 7):
+            if dado1 + dado2 == objetivo:
                 conteo += 1
                 combinaciones.append((dado1, dado2))
     return conteo, combinaciones
@@ -2289,10 +2289,10 @@ def decimal_a_binario(n):
     if n == 0:
         return "0"
     binario = ""
-    while ???:
-        residuo = n ??? 2
-        binario = ???(residuo) + binario
-        n = n ??? 2
+    while n>0:
+        residuo = n % 2
+        binario = str(residuo) + binario
+        n = n // 2
     return binario
 
 # Pruebas
@@ -2622,11 +2622,11 @@ import random
 resultados = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
 
 for _ in range(1000):
-    dado = random.???(1, 6)
-    resultados[???] += 1
+    dado = random.randint(1, 6)
+    resultados[dado] += 1
 
 print("Resultados de 1000 lanzamientos:")
-for cara, conteo in resultados.???():
+for cara, conteo in resultados.items():
     print(f"  Cara {cara}: {conteo} veces")
 ```
 
@@ -2642,10 +2642,10 @@ def generar_contrasena(longitud=12):
     # string.ascii_letters = 'abcdefg...XYZ'
     # string.digits = '0123456789'
     # string.punctuation = '!@#$%...'
-    caracteres = string.ascii_letters + string.??? + string.???
+    caracteres = string.ascii_letters + string.digit + string.punctuation
     contrasena = ""
-    for _ in range(???):
-        contrasena += random.???(caracteres)
+    for _ in range(longitud):
+        contrasena += random.choice(caracteres)
     return contrasena
 
 # Generar 5 contraseñas de diferentes longitudes
@@ -2662,7 +2662,7 @@ plano y el área de un triángulo usando la fórmula de Herón:
 import math
 
 def distancia(x1, y1, x2, y2):
-    return math.???(  (x2-x1)**2 + (???)**2  )
+    return math.sqrt(  (x2-x1)**2 + (y2-y1)**2  )
 
 def area_triangulo(x1, y1, x2, y2, x3, y3):
     # Calcular los tres lados
@@ -2671,7 +2671,7 @@ def area_triangulo(x1, y1, x2, y2, x3, y3):
     c = distancia(x3, y3, x1, y1)
 
     # Fórmula de Herón: s = semiperímetro
-    s = (a + b + c) / ???
+    s = (a + b + c) / 2
     area = math.sqrt(s * (s-a) * (s-b) * (s-c))
     return area
 
