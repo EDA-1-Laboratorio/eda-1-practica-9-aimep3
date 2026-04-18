@@ -1210,6 +1210,7 @@ print(f"Coordenada x: {p[0]}")
 Completa el siguiente programa que usa un diccionario para contar la frecuencia de cada
 letra en una cadena:
 
+```python
 texto = "abracadabra"
 frecuencia = {}
 
@@ -1220,7 +1221,7 @@ for letra in texto:
         frecuencia[letra] = 1
 
 print(frecuencia)
-
+```
 **Salida esperada:**
 ```
 {'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1}
@@ -1229,7 +1230,7 @@ print(frecuencia)
 ### Ejercicio 5.5 — Completa el código
 
 Completa el código que invierte un diccionario (las llaves se vuelven valores y viceversa):
-
+```python
 original = {"rojo": 1, "verde": 2, "azul": 3}
 
 invertido = {}
@@ -1237,7 +1238,7 @@ for llave, valor in original.items():
     invertido[valor] = llave
 
 print(invertido)
-
+```
 **Salida esperada:**
 ```
 {1: 'rojo', 2: 'verde', 3: 'azul'}
