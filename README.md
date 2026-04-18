@@ -687,7 +687,7 @@ print(x)
 - c) `++`
 - d) `%`
 
-**Respuesta:** ___b___
+**Respuesta:** ___c___
 
 ### Ejercicio 3.8 — Opción múltiple
 
