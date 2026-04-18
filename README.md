@@ -1652,8 +1652,8 @@ print("Fuera de la función, x =", x)
 ```
 
 **Tu predicción:**
-- Dentro de la función, x = ______
-- Fuera de la función, x = ______
+- Dentro de la función, x = ___50___
+- Fuera de la función, x = ___100___
 
 > **Nota:** En Python, si quieres modificar una variable global dentro de una función,
 > necesitas usar la palabra `global`. Sin embargo, esto se considera **mala práctica**.
