@@ -862,7 +862,7 @@ Dada la siguiente lista, completa el código para obtener la salida indicada:
 calificaciones = [8.5, 9.0, 7.5, 10.0, 6.0, 8.0]
 
 # 1. Imprime la cantidad de calificaciones
-print("Total:", lend(calificaciones))
+print("Total:", len(calificaciones))
 
 # 2. Imprime la calificación más alta
 print("Máxima:", max(calificaciones))
@@ -871,7 +871,7 @@ print("Máxima:", max(calificaciones))
 print("Mínima:", min(calificaciones))
 
 # 4. Imprime el promedio
-print("Promedio:", sum(calificaciones/len(calificaciones)))
+print("Promedio:", sum(calificaciones)/len(calificaciones))
 
 # 5. Imprime las calificaciones ordenadas de menor a mayor
 #    Pista: usa sorted()
