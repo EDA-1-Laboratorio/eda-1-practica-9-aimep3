@@ -965,7 +965,7 @@ print(len(lista))
 - c) `5`
 - d) Error
 
-**Respuesta:** ___4___
+**Respuesta:** ___b___
 
 > **Nota:** `append` agrega el argumento como **un solo elemento**. Si quieres agregar los
 > elementos individuales, usa `extend`: `lista.extend([40, 50])` → longitud sería 5.
