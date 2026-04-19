@@ -2973,6 +2973,15 @@ por el usuario (o un texto predefinido) y muestre estadísticas detalladas.
 **Funciones a implementar:**
 
 ```python
+import string
+
+def limpiar_texto(texto):
+    # Función auxiliar para quitar signos de puntuación y pasar a minúsculas
+    texto_limpio = texto.lower()
+    for puntuacion in string.punctuation + "¿¡":
+        texto_limpio = texto_limpio.replace(puntuacion, "")
+    return texto_limpio
+
 def contar_palabras(texto):
     palabras = texto.split()
     return len(palabras)
