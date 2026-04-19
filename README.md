@@ -2643,7 +2643,7 @@ def generar_contrasena(longitud=12):
     # string.ascii_letters = 'abcdefg...XYZ'
     # string.digits = '0123456789'
     # string.punctuation = '!@#$%...'
-    caracteres = string.ascii_letters + string.digit + string.punctuation
+    caracteres = string.ascii_letters + string.digits + string.punctuation
     contrasena = ""
     for _ in range(longitud):
         contrasena += random.choice(caracteres)
