@@ -2974,33 +2974,52 @@ por el usuario (o un texto predefinido) y muestre estadísticas detalladas.
 
 ```python
 def contar_palabras(texto):
-    # TODO: Retornar el número total de palabras
-    pass
+    palabras = texto.split()
+    return len(palabras)
 
 def contar_oraciones(texto):
-    # TODO: Contar oraciones (terminan en '.', '!' o '?')
-    pass
+    # Contamos cuántas veces aparecen los puntos, signos de exclamación y de interrogación de cierre
+    return texto.count('.') + texto.count('!') + texto.count('?')
 
 def palabra_mas_frecuente(texto):
-    # TODO: Retornar la palabra que más se repite (ignorar mayúsculas)
-    # Pista: usa un diccionario para contar frecuencias
-    pass
+    texto_limpio = limpiar_texto(texto)
+    palabras = texto_limpio.split()
+    
+    if not palabras:
+        return None
+        
+    frecuencias = {}
+    for p in palabras:
+        frecuencias[p] = frecuencias.get(p, 0) + 1
+        
+    # Encontrar la llave con el valor máximo
+    palabra_top = max(frecuencias, key=frecuencias.get)
+    return palabra_top
 
 def palabras_unicas(texto):
-    # TODO: Retornar un conjunto (set) de palabras únicas
-    pass
+    texto_limpio = limpiar_texto(texto)
+    # Convertimos la lista de palabras en un set (conjunto) para eliminar duplicados
+    return set(texto_limpio.split())
 
 def longitud_promedio_palabras(texto):
-    # TODO: Retornar la longitud promedio de las palabras
-    pass
+    texto_limpio = limpiar_texto(texto)
+    palabras = texto_limpio.split()
+    
+    if not palabras:
+        return 0
+        
+    total_letras = sum(len(p) for p in palabras)
+    return total_letras / len(palabras)
 
 def buscar_palabra(texto, palabra):
-    # TODO: Retornar cuántas veces aparece la palabra en el texto
-    pass
+    texto_limpio = limpiar_texto(texto)
+    palabra_limpia = limpiar_texto(palabra)
+    palabras = texto_limpio.split()
+    return palabras.count(palabra_limpia)
 
 def reemplazar_palabra(texto, vieja, nueva):
-    # TODO: Retornar el texto con la palabra vieja reemplazada por la nueva
-    pass
+    # Reemplazo básico (Nota: afecta a subcadenas también, pero cumple con el ejercicio)
+    return texto.replace(vieja, nueva)
 
 # Texto de ejemplo para analizar
 texto_ejemplo = """
