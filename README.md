@@ -1885,8 +1885,8 @@ Completa la función que clasifica un carácter según su tipo:
 
 ```python
 def clasificar_caracter(c):
-    if c.ishalpha():        # ¿Es una letra?
-        if c.issupper():    # ¿Es mayúscula?
+    if c.isalpha():        # ¿Es una letra?
+        if c.isupper():    # ¿Es mayúscula?
             return "Letra mayúscula"
         else:
             return "Letra minúscula"
