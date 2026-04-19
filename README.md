@@ -178,7 +178,7 @@ print(m, n, p)          # 0 0 0
 - c) `int x = 5`
 - d) `PI = 3.14159`
 
-**Respuesta:** __b__
+**Respuesta:** __c__
 
 ### Ejercicio 1.5 — Opción múltiple
 
